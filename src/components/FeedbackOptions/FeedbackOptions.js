@@ -1,4 +1,5 @@
 import styles from './FeedbackOptions.module.css';
+import PropTypes from 'prop-types';
 
 const FeedbackOptions = ({ options }) => {
   return (
@@ -24,6 +25,10 @@ const FeedbackOptions = ({ options }) => {
       </button>
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.func,
 };
 
 export default FeedbackOptions;

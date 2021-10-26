@@ -15,11 +15,14 @@ export default function App() {
   const counter = event => {
     switch (event.target.name) {
       case 'good':
-        return setGood(prevState => prevState + 1);
+        setGood(prevState => prevState + 1);
+        break;
       case 'neutral':
-        return setNeutral(prevState => prevState + 1);
+        setNeutral(prevState => prevState + 1);
+        break;
       case 'bad':
-        return setBad(prevState => prevState + 1);
+        setBad(prevState => prevState + 1);
+        break;
       default:
         return;
     }
